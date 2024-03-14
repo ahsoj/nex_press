@@ -30,7 +30,7 @@ const config = {
         },
       },
       backgroundColor: {
-        brand: "hsl(93, 82%, 2%)",
+        brand: "rgb(20, 20, 20)",
         primary: "hsl(93, 81%, 75%)",
         secondary: "hsl(186, 82%, 30%)",
         accent: "hsl(216, 82%, 52%)",

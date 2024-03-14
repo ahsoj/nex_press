@@ -11,6 +11,18 @@
     font-size: clamp(40px, 8vw, 105px);
 }
 
+.h2_text {
+    font-size: clamp(15px, 4vw, 25px);
+}
+
+.triangle_shape {
+    width: 0;
+    height: 0;
+    border-top: 100px solid red;
+    border-right: 100px solid transparent;
+}
+
+
 .angled_shape::after {
     image-rendering: pixelated;
     background-size: 100% 100%;
