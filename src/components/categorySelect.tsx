@@ -1,3 +1,4 @@
+"use client";
 import * as React from "react";
 
 import {
@@ -9,6 +10,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 interface SelectionValue extends React.HTMLAttributes<HTMLElement> {}
 
@@ -20,8 +23,12 @@ export function MobileMenuTabs({
 }: {
   value: SelectValueType[];
 }) {
+  const router = useRouter();
   return (
-    <Select {...props}>
+    <Select
+      onValueChange={(value) => router.push(`?category=${value}`)}
+      {...props}
+    >
       <SelectTrigger className="w-[180px]">
         <SelectValue placeholder="Select Category" />
       </SelectTrigger>
